@@ -25,7 +25,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 /* 
 ---------------------------------------------
 reset
@@ -77,7 +77,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter'
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -96,15 +96,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #0B1956;
-  font-size: 50px;
-  font-weight: 500;
-  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
   padding-bottom: 0%;
+}
+
+strong {
+  font-size: 90px;
 }
 
 h2 {
   color: #01011F;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -125,7 +128,7 @@ ul {
 p {
   font-size: 14px;
   line-height: 28px;
-  color: #1A1A36;
+  color: #67677A;
 }
 
 img {
@@ -140,7 +143,7 @@ Global Styles
 */
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 ::selection {
@@ -183,21 +186,26 @@ body {
 
 .main-button a {
   display: inline-block;
-  background-color: #FFAAA9;
-  color: #01011F;
+  background-color: var(--corvid-background-color,rgba(var(--bg,var(--color_17,color_17)),var(--alpha-bg,1)));
+  border: solid var(--corvid-border-color,rgba(var(--brd,var(--color_15,color_15)),var(--alpha-brd,1))) var(--corvid-border-width,var(--brw,0));
+  cursor: pointer!important;
+  color: #0B1956;
+  border:solid;
   font-weight: 500;
   height: 40px;
   line-height: 40px;
   padding: 0px 25px;
-  border-radius: 20px;
   transition: all .3s;
   margin-top: 5%;
   margin-left: 12%;
 }
 
+
+
 .main-button a:hover {
-  background-color: #7a6ad8;
-  color: #fff;
+  background-color: #ffffff;
+  border: solid;
+  border-color: #ffffff;
 }
 
 /* 
@@ -310,7 +318,6 @@ Header Style
 
 .background-header {
   background-color: #0B1956 !important;
-  border-radius: 0px 0px 25px 25px;
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
@@ -697,6 +704,7 @@ Banner Style
   background-repeat: no-repeat;
   background-size: cover;
   padding: 170px 0px 120px 0px;
+  margin-top: 3%;
 }
 
 .main-banner .item-1 {
@@ -875,7 +883,7 @@ Services Style
 
 .services .service-item h4 {
   color: #2F4964;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
   line-height: 30px;
@@ -941,7 +949,7 @@ About Style
 
 h2.accordion-header button {
   padding: 15px 25px;
-  font-family: 'Poppins';
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 600;
 }
@@ -1119,12 +1127,6 @@ Facts Style
 --------------------------------------------- 
 */
 
-.fun-facts {
-  position: relative;
-  padding: 120px 0px 80px 0px;
-  overflow: hidden;
-}
-
 .fun-facts:before {
   position: absolute;
   top: 0;
@@ -1288,9 +1290,8 @@ Testimonials Style
 }
 
 .testimonials .item {
-  background-color: #0B1956;
-  border-radius: 25px;
-  padding: 80px;
+  background-color: #0b1956;
+  padding: 40px;
 }
 
 .testimonials .item p {
@@ -1370,7 +1371,6 @@ Events Style
 
 .events .item {
   background-color: #FFE7E3;
-  border-radius: 25px;
   position: relative;
   padding: 40px;
   margin-bottom: 96px;
@@ -1382,7 +1382,6 @@ Events Style
 
 .events .item .image img {
   position: absolute;
-  border-radius: 25px;
   max-width: 250px;
   left: 0;
   top: -70px;
@@ -1408,7 +1407,6 @@ Events Style
   color: #fff;
   background-color: #0B1956;
   padding: 8px 20px;
-  border-radius: 25px;
   font-weight: 500;
   display: inline-block;
   margin-bottom: 20px;
@@ -1459,20 +1457,6 @@ Contact Style
   margin-top: 80px;
   position: relative;
   padding: 50px 0px;
-}
-
-.contact-us:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  width: 65%;
-  height: 100%;
-  background-color: #f1f0fe;
-  content: '';
-  border-top-right-radius: 500px;
-  border-bottom-right-radius: 500px;
 }
 
 
@@ -1704,18 +1688,7 @@ footer p a:hover {
   opacity: 0.75;
 }
 
-footer::before {
-  background: url(../images/contact-dec-01.png);
-  position: absolute;
-  left: 30px;
-  transform: rotate(180deg);
-  opacity: 1;
-  bottom: 0;
-  width: 318px;
-  height: 119px;
-  content: '';
-  z-index: 2;
-}
+
 
 /* hero */
 
@@ -1735,6 +1708,18 @@ footer::before {
 }
 
 /*seccion 2*/
+
+#titulo2 h5::before {
+  content: 'ENFOQUE';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
 
 #titulo1 {
   text-align: center;
@@ -1763,7 +1748,7 @@ footer::before {
 /*seccion 3*/
 
 .seccion3 {
-  margin-top: 5%;
+  /*margin-top: 5%;*/
 }
 
 .alimentacion {
@@ -1803,7 +1788,319 @@ footer::before {
 
 #boton1 {
   align-content: center;
-  margin: 0%;
+  margin-left: 0%;
+  margin-top: 3%;
+  border: #1a1a3600;
+  color: #ffffff;
+  background-color: #0B1956
+}
+
+hr{
+  color: #2F4964;
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: .15;
+  width: 15%;
+  margin: 20px auto; 
+}
+
+
+/*ENFOQUE*/
+
+.mentalidad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.alimentacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.ejercicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.col-lg-5 {
+  width: 48%;
+}
+
+h5 {
+  font-size: 5rem;
+  color: #1a1a3600;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.ejercicio h5::before {
+  content: 'EJERCICIO';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+.alimentacion h5::before {
+  content: 'ALIMENTACION';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+.mentalidad h5::before {
+  content: 'MENTALIDAD';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+.product-content {
+  position: relative;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.product-content h2 {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.product-content h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #0B1956;
+  margin: 10px auto 0;
+}
+
+.product-content p {
+  color: #67677A;
+  margin: 10px 0;
+}
+
+.product-content a {
+  color: #0B1956;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+#imagenenfoque img {
+  max-width: 75%;
+  height: auto;
+}
+
+
+#titulo4 h2 {
+  color: #fff;
+  text-align: center;
+}
+
+#titulo4 h5 {
+  color: #282862;
+  text-align: center;
+}
+
+#titulo4 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#titulo4 h5::before {
+  content: 'NUESTRO ESPACIO';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+
+#titulo4 h2 {
+  color: #fff;
+  text-align: center;
+}
+
+#titulocursos {
+  margin-bottom: 3%;
+}
+
+#titulocursos h5::before {
+  content: 'CURSOS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#reseñas {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#titulo5 h5::before {
+  content: 'RESEÑAS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+/* 
+---------------------------------------------
+DETALLE
+--------------------------------------------- 
+*/
+
+/*herodetalle*/
+
+#heroimg{
+  width: 75%;
+}
+
+.fun-facts {
+  background-color: #0B1956;
+  margin-top: 0%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+#titulo3detalle h5::before {
+  content: 'TOP100';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#titulo3detalle {
+  margin-bottom: 5%;
+}
+
+#secc3 {
+  margin-top: 3%;
+}
+
+
+#titulo4detalle h5::before {
+  content: 'BENEFICIOS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+##titulo3detalle {
+  margin-top: 3%;
+}
+
+#beneficios {
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+#botonotro {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+#botonb {
+  display: inline-block;
+  background-color: var(--corvid-background-color, rgba(color_17, 1));
+  border: solid var(--corvid-border-color, rgba(color_15, 1)) var(--corvid-border-width, var(--brw, 0));
+  cursor: pointer !important;
+  color: #0B1956;
+  border: solid;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 25px;
+  transition: all .3s;
+  margin-top: 5%;
+  margin-left: 12%;
+}
+
+
+#tituloprofesional h5::before {
+  content: 'BENEFICIOS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#profesion {
+  flex-direction: row
+  flex-wrap: wrap
+  align-content: flex-start
+  justify-content: space-around
+  align-items: flex-end
+  margin-top: 10%;
 }
 
 /* 
