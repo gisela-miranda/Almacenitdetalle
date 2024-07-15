@@ -158,7 +158,6 @@ body {
 
 .section {
   padding-top: 30px;
-  margin-top: 120px;
 }
 
 .section-heading {
@@ -708,19 +707,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.png);
+  background-image: url(../images/entrada.jpg);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-item-02.png);
+  background-image: url(../images/gimnasio.jpg);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-item-03.png);
-}
-
-.main-banner .item-4 {
-  background-image: url(../images/banner-item-04.png);
+  background-image: url(../images/yoga.jpg);
 }
 
 .main-banner .item {
@@ -904,21 +899,7 @@ About Style
 .about-us {
   position: relative;
   padding: 0px;
-  margin-top: 130px;
-}
-
-.about-us:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  width: 84%;
-  height: 100%;
-  background-color: #f1f0fe;
-  content: '';
-  border-top-left-radius: 500px;
-  border-bottom-left-radius: 500px;
+  margin-top: 3%;
 }
 
 .accordion {
@@ -930,7 +911,7 @@ About Style
 }
 
 .accordion-item {
-  background-color: #fff;
+  background-color: #ffd3e2;
   border-radius: 40px !important;
   margin-bottom: 30px;
   border: none;
@@ -943,8 +924,8 @@ About Style
 }
 
 .accordion-button:not(.collapsed) {
-  color: #0B1956;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #FB9EBB;
 }
 
 h2.accordion-header button {
@@ -999,7 +980,7 @@ Courses Style
 */
 
 .courses {
-  margin-top: 160px;
+
 }
 
 .event_filter {
@@ -1050,8 +1031,8 @@ Courses Style
   top: 30px;
   font-size: 14px;
   text-transform: uppercase;
-  color: #7a6ad8;
-  background-color: rgba(250, 250, 250, 0.95);
+  color: #ffffff;
+  background-color: #FB9EBB;
   padding: 8px 20px;
   border-radius: 25px;
   font-weight: 500;
@@ -1087,7 +1068,7 @@ Courses Style
 }
 
 .events_item {
-  background-color: #f1f0fe;
+  background-color: #ffd3e1;
   border-radius: 25px;
   margin-bottom: 30px;
   position: relative;
@@ -1113,7 +1094,7 @@ Courses Style
 }
 
 .events_item:hover .down-content h4 {
-  color: #7a6ad8;
+  color: #0B1956;
 }
 
 .events_item:hover .thumb span.price {
@@ -1135,7 +1116,7 @@ Facts Style
   z-index: -1;
   width: 95%;
   height: 100%;
-  background-color: #7a6ad8;
+  background-color: #7b6ad800;
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
@@ -1184,8 +1165,7 @@ Team Style
 */
 
 .team {
-  margin-top: 100px;
-    padding-top: 140px;
+  margin-top: 3%;
 }
 
 .team-member {
@@ -1209,12 +1189,17 @@ Team Style
 .team-member .main-content {
   border-radius: 25px;
   padding: 140px 30px 40px 30px;
-  background-color: #f1f0fe;
+  background-color: #0B1956;
   text-align: center;
 }
 
+
+#team h4 {
+  color: #ffffff;
+}
+
 .team-member .main-content span.category {
-  color: #7a6ad8;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -1231,8 +1216,8 @@ Team Style
 }
 
 .team-member .main-content ul li a {
-  background-color: #fff;
-  color: #7a6ad8;
+  background-color: #ffffff;
+  color: #FB9EBB;
   display: inline-block;
   text-align: center;
   line-height: 40px;
@@ -1244,7 +1229,7 @@ Team Style
 }
 
 .team-member .main-content ul li a:hover {
-  background-color: #7a6ad8;
+  background-color: #FB9EBB;
   color: #fff;
 }
 
@@ -1261,23 +1246,10 @@ Testimonials Style
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 80px 0px;
-  margin-top: 150px;
+  margin-top: 3%;
 }
 
-.testimonials:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  width: 65%;
-  height: 100%;
-  background-color: #f1f0fe;
-  content: '';
-  border-top-left-radius: 500px;
-  border-bottom-left-radius: 500px;
-}
+
 
 .testimonials .section-heading {
   margin-bottom: 0px;
@@ -1291,6 +1263,7 @@ Testimonials Style
 
 .testimonials .item {
   background-color: #0b1956;
+  border-radius: 40px;
   padding: 40px;
 }
 
@@ -1373,6 +1346,7 @@ Events Style
   background-color: #FFE7E3;
   position: relative;
   padding: 40px;
+  border-radius: 25px;
   margin-bottom: 96px;
 }
 
@@ -1382,6 +1356,7 @@ Events Style
 
 .events .item .image img {
   position: absolute;
+  border-radius: 25px;
   max-width: 250px;
   left: 0;
   top: -70px;
@@ -1405,7 +1380,8 @@ Events Style
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
-  background-color: #0B1956;
+  background-color: #FB9EBB;
+  border-radius: 25px;
   padding: 8px 20px;
   font-weight: 500;
   display: inline-block;
@@ -1664,7 +1640,7 @@ Footer Style
 footer {
   margin-top: 150px;
   position: relative;
-  background-color: #7a6ad8;
+  background-color: #FFAAA9;
   vertical-align: middle;
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
@@ -1690,7 +1666,7 @@ footer p a:hover {
 
 
 
-/* hero */
+/*HERO*/
 
 #hero {
   padding-top: 10%;
@@ -1706,6 +1682,99 @@ footer p a:hover {
   height: auto;
   margin-bottom: 0%;
 }
+
+/*ESCENCIA*/
+
+#escencia {
+  margin-top: 3%;
+  margin-bottom: 0%;
+}
+
+#puntosescencia {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+
+#escencia h5::before {
+  content: 'ESCENCIA';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+/*enfoque*/
+
+#enfoque h5::before {
+  content: 'ENFOQUE';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#tituloenfoque {
+  margin-bottom: 3%;
+}
+
+#puntosenfoque {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.event_box {
+  width: 100%; /* Esto asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.event_outer {
+  margin: 0 15px; /* Esto agrega un margen horizontal a cada columna para evitar que se junten demasiado */
+}
+
+#enfoque p{
+  font-size: 12px;
+  line-height: 20px;
+  color: #67677A;
+  margin-top: 3%;
+}
+
+/*NOSOTROS*/
+
+#nosotros img{
+  max-width: 70%;
+}
+
+#titulonosotros h5::before {
+  content: 'NOSOTROS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#nosotros h2{
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  position: relative;
+}
+
 
 /*seccion 2*/
 
@@ -1772,11 +1841,10 @@ footer p a:hover {
 /*cursos*/
 
 #cursos{
-  /*background-image: url(../images/fondocursos.png);*/
+  background-image: url(../images/fondo2.jpg):
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0px 120px 0px;
 }
 
 
@@ -1791,6 +1859,7 @@ footer p a:hover {
   margin-left: 0%;
   margin-top: 3%;
   border: #1a1a3600;
+  border-radius: 20px;
   color: #ffffff;
   background-color: #0B1956
 }
@@ -1807,33 +1876,22 @@ hr{
 }
 
 
-/*ENFOQUE*/
+/*NOSOTROS*/
 
-.mentalidad {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+#nosotros p{
+  text-align: left;
+  margin-top: 0%;
 }
 
-.alimentacion {
+.equipo {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.ejercicio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+  flex-direction: row-reverse;
 }
 
 .col-lg-5 {
@@ -1885,9 +1943,7 @@ h5 {
 }
 
 .product-content {
-  position: relative;
-  margin-top: -40px;
-  text-align: center;
+  margin-right: 3%;
 }
 
 .product-content h2 {
@@ -1896,6 +1952,7 @@ h5 {
   padding: 0;
   font-size: 1.5rem;
   position: relative;
+  text-align: center;
 }
 
 .product-content h2::after {
@@ -2094,6 +2151,24 @@ DETALLE
   opacity: 0.3;
 }
 
+#tituloreseñas h5::before {
+  content: 'RESEÑAS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#reseñas {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 3%;
+}
+
 #profesion {
   flex-direction: row
   flex-wrap: wrap
@@ -2101,6 +2176,161 @@ DETALLE
   justify-content: space-around
   align-items: flex-end
   margin-top: 10%;
+}
+
+.product-content {
+  position: relative;
+  margin-top: -40px;
+  text-align: center;
+}
+
+button {
+  align-content: center;
+  margin-left: 0%;
+  margin-top: 3%;
+  border: #1a1a3600;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #0B1956;
+  height: 50%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+}
+
+.centered-button {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  background-color: #0B1956; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: 1px solid #1a1a3600; /* Estilo y color del borde */
+  border-radius: 30px; /* Radio de los bordes del botón */
+  height: 50px; /* Altura del botón */
+  line-height: 30px; /* Alineación vertical del contenido */
+  text-align: center; /* Alineación del texto al centro */
+  display: inline-block; /* Hace que el botón se ajuste al contenido */
+  text-decoration: none; /* Elimina el subrayado del texto */
+  margin-left: 0%; /* Margen izquierdo del botón */
+  margin-top: 3%; /* Margen superior del botón */
+}
+
+.button-hero {
+  display: flex;
+  align-items: center;
+  height: 100px; 
+}
+
+
+
+/*SERVICIOS*/
+
+#servicios {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 5%;
+}
+
+
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 3%;
+}
+
+.servicio {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #FFE7E3;
+  position: relative;
+  padding: 40px;
+  border-radius: 25px;
+}
+
+.servicio p{
+  font-size: 12px;
+  line-height: 20px;
+  color: #67677A;
+  margin-top: 3%;
+}
+
+.servicio h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FB9EBB;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contacto {
+  text-align: center;
+  font-weight: bold;
+  color: #34495e;
+  margin-top: 20px;
+}
+
+#tituloservicios h5::before {
+  content: 'SERVICIOS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#titulocontacto h5::before {
+  content: 'CONTACTANOS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#modulos {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#contenidotitulo h5::before {
+  content: 'MODULOS';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#tituloprofesionales h5::before {
+  content: 'PROFESIONALES';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D9D9DD;
+  z-index: -1;
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+#profesionales {
+  margin-top: 15%;
 }
 
 /* 
@@ -2250,6 +2480,7 @@ body {
   }
   .testimonials .item {
     padding: 40px 40px 60px 40px;
+    margin-top: 5%;
   }
   .testimonials .item h4 {
     font-size: 17px;
@@ -2337,3 +2568,42 @@ body {
     width: 95%;
   }
 }
+
+@media (max-width: 767px) {
+
+
+  .servicio {
+    flex-basis: calc(100% - 20px); 
+    margin: 10px 0;
+  }
+
+
+  .contenedor-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  #modulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  #titulocursos {
+    margin-bottom: 15%;
+  }
+
+
+
+
+
+}
+
+
